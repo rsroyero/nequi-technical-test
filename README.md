@@ -18,10 +18,16 @@ Productos: Cada producto tiene un nombre y una cantidad de stock.
 
 ## Instalación del Proyecto
 
-Ubicarse en la raiz del proyecto y ejecutar el siguiente comando
+Descargar el proyecto, el proycto se debe llamar
 
 ```bash
-  mvn clean install
+  nequi-technical-test
+```
+
+Si al descargarlo directamente por github web el proyecto le aparece con otro nombre, debe modificar la carpeta de descarga de la siguiente manera
+
+```bash
+  nequi-technical-test-master --> nequi-technical-test
 ```
 
 Levantar el contenedor de docker
@@ -30,7 +36,13 @@ Levantar el contenedor de docker
   docker-compose up -d
 ```
 
-Sobre otra terminal en la raiz del proyecto ejecutar el siguiente comando para arrancar el proyecto.
+Ubicarse en la raiz del proyecto y ejecutar el siguiente comando
+
+```bash
+  mvn clean install
+```
+
+Sobre la raiz del proyecto ejecutar el siguiente comando para arrancar el proyecto.
 
 ```bash
   mvn spring-boot:run 
